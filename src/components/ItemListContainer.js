@@ -1,6 +1,7 @@
-export const ItemListContainer = () => {
+
+export const ItemListContainer = ({greeting}) => {
     return (  
-        <p></p> 
+        <p>{greeting}</p> 
     );
   };
   export default ItemListContainer;

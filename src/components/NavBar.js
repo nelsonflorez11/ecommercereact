@@ -1,3 +1,4 @@
+import CartWidget from "./CartWidget";
 
 export const NavBar = () => {
   return (
@@ -11,10 +12,11 @@ export const NavBar = () => {
       <li><a>Frutas</a></li>
       <li><a>Despensa</a></li>
       <li><a>Congelados</a></li>
-    </ul>
+      <li><a><CartWidget/></a></li>   
+    </ul>    
   </div>
 </div>
-    
+  
     
   );
 };

@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
-import CartWidget from './components/CartWidget';
+import PokeApiContainer from './components/PokeApiContainer';
+
 
 
 
@@ -11,9 +12,11 @@ function App() {
   return (
     
     <>
-    <NavBar></NavBar>
-    <ItemListContainer greeting='Saludos desde el curso de React'></ItemListContainer>
-    <CartWidget></CartWidget>
+    <NavBar/>
+    <ItemListContainer greeting='Saludos desde el curso de React'/>    
+    <PokeApiContainer/>
+    
+    
     </>
     
     

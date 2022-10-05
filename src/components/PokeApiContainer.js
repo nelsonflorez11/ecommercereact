@@ -1,10 +1,18 @@
 import { useEffect, useState } from "react";
 
-export const RmCard = ( {name,image} ) => {
+export const RmCard = ( {name,image,location} ) => {
   return(
-    <div>
-      <div>{name}</div>
-      <div><img src={image}></img></div>      
+   
+      <div className="card w-96 bg-base-100 shadow-xl">
+        <figure><img src={image} alt="Shoes" /></figure>
+        <div className="card-body">
+          <h2 className="card-title">{name}</h2>
+          <p>Visto por primera vez en:</p>
+          <p>{location.name}</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-primary">Agregar</button>
+          </div>
+        </div>   
     </div>
 
   )

@@ -10,17 +10,13 @@ import PokeApiContainer from './components/PokeApiContainer';
 
 function App() {
   return (
-    
+
     <>
     <NavBar/>
-    <ItemListContainer greeting='Saludos desde el curso de React'/>    
-    <PokeApiContainer/>
-    
-    
+    <ItemListContainer greeting='Elije tu personaje'/>    
+    <PokeApiContainer/>   
     </>
-    
-    
-   
+
   );
 }
 

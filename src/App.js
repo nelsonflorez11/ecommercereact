@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
-import PokeApiContainer from './components/PokeApiContainer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ItemDetalle from './components/ItemDetalle';
+import ItemDetailContainer from './components/ItemDetailContainer';
+import CategoryContainer from './components/CategoryContainer';
 
 
 
@@ -16,11 +16,12 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <Routes>
-          <Route path={'/'} element={<PokeApiContainer/>} />
-          <Route path={'/detalle'} element={<ItemDetalle/>} />
+          <Route path={'/'} element={<ItemListContainer/>} />
+          <Route path={'/category/:categoryid'} element={<CategoryContainer/>} />
+          <Route path={'/item/:id'} element={<ItemDetailContainer/>} />
           
         </Routes>
-        <ItemListContainer greeting='Elije tu personaje'/>    
+     
          
       </BrowserRouter>
   

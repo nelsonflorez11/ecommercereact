@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-export const RmCard = ( {name,image,location} ) => {
+export const RmCard = ( {id,name,image,location} ) => {
   return(
    
       <div className="card w-96 bg-base-100 shadow-xl">
@@ -10,7 +11,7 @@ export const RmCard = ( {name,image,location} ) => {
           <p>Visto por primera vez en:</p>
           <p>{location.name}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Agregar</button>
+            <Link to={`/ItemDetalle/${id}`} button className="btn btn-primary">Agregar</Link>
           </div>
         </div>   
     </div>
@@ -43,11 +44,6 @@ const PokeApiContainer = () => {
     <div>     
       { pokemon.map( p => <RmCard key={p.id} {...p} />) }      
     </div>
- 
-
-    
-
-
   );
 };
 export default PokeApiContainer;

@@ -10,10 +10,13 @@ export const NavBar = () => {
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal p-0">
-          <li><a>Lacteos</a></li>
-          <li><a>Frutas</a></li>
-          <li><a>Despensa</a></li>
-          <li><a>Congelados</a></li>
+          
+          <li><a><Link to={`/category/:{human}`}>Human</Link></a></li>
+          <li><a><Link to="/category/:categoryid">Alien</Link></a></li>
+
+         
+          {/* <li><a>Despensa</a></li>
+          <li><a>Congelados</a></li> */}
           <li><a><CartWidget/>0</a></li>   
         </ul>    
       </div>

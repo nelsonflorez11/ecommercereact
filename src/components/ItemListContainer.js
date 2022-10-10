@@ -11,7 +11,7 @@ export const RmCard = ( {id,name,image,location} ) => {
           <p>Visto por primera vez en:</p>
           <p>{location.name}</p>
           <div className="card-actions justify-end">
-            <Link to={`/item/${id}`} button="true" className="btn btn-primary">Detalle</Link>
+            <Link to={`/item/${id}`} button="true" className="btn btn-primary">Agregar</Link>
           </div>
         </div>   
     </div>

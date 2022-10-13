@@ -11,8 +11,8 @@ export const NavBar = () => {
       <div className="flex-none">
         <ul className="menu menu-horizontal p-0">
           
-          <li><a><Link to={`/category/:{human}`}>Human</Link></a></li>
-          <li><a><Link to="/category/:categoryid">Alien</Link></a></li>
+          <li><a><Link to={`/category/human`}>Human</Link></a></li>
+          <li><a><Link to="/category/alien">Alien</Link></a></li>
 
          
           {/* <li><a>Despensa</a></li>
